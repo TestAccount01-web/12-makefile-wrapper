@@ -4,3 +4,9 @@ def apply_discount(price, pct):
 
 def cart_total(items):
     return round(sum(i['price'] * i['qty'] for i in items), 2)
+
+
+def divide(a, b):
+    if b == 0:
+        raise ZeroDivisionError("Cannot divide by zero")
+    return a / b
